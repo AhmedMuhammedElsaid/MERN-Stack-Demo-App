@@ -1,22 +1,24 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Full-Stack (MERN-Stack) app",
   "main": "server.js",
-  "engine":{
-    "node":"12.6.3",
+  "engine": {
+    "node": "12.6.3",
     "npm": "6.14.4"
   },
   "scripts": {
     "build": "cd client && npm run build",
     "install-client": "cd client&& npm install  ",
+    "install-server": "npm install  ",
     "heroku-postbuild": "npm run install-client && npm run build ",
     "start": "node server.js",
     "client": "cd client&& npm start",
-    "dev": "concurrently -n 'server,client' -c 'red,green' \"nodemon server.js\" \"npm run client\""
+    "dev": "concurrently -n 'server,client' -c 'red,green' \"nodemon server.js\" \"npm run client\"",
+    "i-start": " npm run install-client && npm run install-server && npm run dev"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ahmed Muhammed Elsaid",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
