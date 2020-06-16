@@ -1,11 +1,11 @@
 import actionType from "./Types";
-
+const PORT = process.env.PORT || 4000;
 
 const API = `https://restcountries.eu/rest/v2/name/`;
-const API_Q1 = "http://localhost:4000/api/";
-const API_Q2 = "http://localhost:4000/api/countries";
-const API_Q3 = "https://restcountries.eu/rest/v2/all";
-const API_Q4 = "http://localhost:4000/api/slotMachine";
+const API_Q1 = `http://localhost:${PORT}/api`;
+const API_Q2 = `http://localhost:${PORT}/api/countries`;
+const API_Q3 = `https://restcountries.eu/rest/v2/all`;
+const API_Q4 = `http://localhost:${PORT}/api/slotMachine`;
 const getData = () => {
   return (dispatch) => {
     fetch(API_Q1)
