@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #303960 !important;
+}
+
+.card{
+ 
+    margin: 0 auto;
+    max-width: 30rem;
+    max-height: 18rem ;
+}
+p{
+
+    color:#e5e5e5 !important;
+    font-size: 1.5rem;
+
+}
+table{
+    /* background-color: #ea9a96; */
+    background-color: #f8b24f;
+}h3{
+    color: #f8b24f;
+}
+.form-control{
+    background-color: #e5e5e5 !important;
+}
