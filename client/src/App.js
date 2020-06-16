@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="container">
-    <Title title='Question One' center/>
+    <Title title='Q1' center/>
     <InputForm/>
     <QuestionsAns/>
     <SlotMachine/>
