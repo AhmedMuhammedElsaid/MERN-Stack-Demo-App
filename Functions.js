@@ -46,7 +46,7 @@ const getData = async (strArr) => {
 function slotMachine(userCoins) {
   let coins = userCoins;
   coins--;
-  let result, level;
+  let result, level, data;
   let Reel1 = [
     "cherry",
     "lemon",
@@ -118,18 +118,13 @@ function slotMachine(userCoins) {
     level = `You Are Not Lucky Today You Have Lost One Coin`;
   }
 
-   
-  result = ` 
-   ........................................................
-   ${span1}  ${span2}  ${span3}................................................................
-                 ${level}
-    your Coins now =${coins}  
-     `;
-  return result;
+  data = [span1, span2, span3, level, coins];
+
+  return data;
 }
 
 module.exports = {
   getCountryByName: getCountryByName,
   getCommonCountries: getData,
-  slotMachine: slotMachine
+  slotMachine: slotMachine,
 };

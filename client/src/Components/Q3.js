@@ -30,7 +30,7 @@ export default function Q3() {
     );
   });
   return (
-    <>
+    <div className="container">
       <Title title="Q3" center />
       <InputField />
       <table className="table table-hover text-center">
@@ -55,6 +55,6 @@ export default function Q3() {
           )}
         </tbody>
       </table>
-    </>
+    </div>
   );
 }

@@ -3,6 +3,7 @@ import Title from './Title'
 import SchemaBcg from './Schema1.JPG'
 
 export default function Q4() {
+    
     return (
         <div>
         <Title title="Q4" center/>

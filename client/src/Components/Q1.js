@@ -19,10 +19,10 @@ export default function Q1() {
   return (
     <>
       {countryData ? (<div className=" justify-content-md-center row">
-        <div className=" mt-2 text-center col-lg-2 col-sm-2">
+        <div className=" mt-2 text-center col-lg-4 col-sm-2">
           {data}
         </div>
-        <div className=" col-sm-4 col-lg-6">
+        <div className="col col-lg-4 col-sm-4">
           <div className="card " style={{ backgroundColor: 'transparent' }}>
             <img className='card-img-overlay img-fluid' src={flag} />
           </div>

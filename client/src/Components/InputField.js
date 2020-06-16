@@ -15,8 +15,8 @@ const InputField = () => {
     };
 
     return (
-        <>
-            <Title title="Get The Country Info By typing  the Name Or Just Click on the country name in the table" center />
+        <div className="container">
+            <Title title="Get The Country Info By typing  the Name " center />
             <div>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group row mt-5">
@@ -41,7 +41,7 @@ const InputField = () => {
             </div>
             <Space></Space>
          
-        </>
+        </div>
     );
 };
 

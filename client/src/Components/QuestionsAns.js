@@ -1,7 +1,7 @@
 import React from 'react'
-import Q1 from './Q1'
 import { useSelector } from "react-redux";
 import Spinner from 'react-bootstrap/Spinner'
+import Q1 from './Q1'
 import Q2 from './Q2';
 import Q3 from './Q3';
 import Q4 from './Q4';
