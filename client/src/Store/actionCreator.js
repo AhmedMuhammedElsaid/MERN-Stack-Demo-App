@@ -2,10 +2,10 @@ import actionType from "./Types";
 
 
 const API = `https://restcountries.eu/rest/v2/name/`;
-const API_Q1 = "http://localhost:4000/";
-const API_Q2 = "http://localhost:4000/countries";
+const API_Q1 = "http://localhost:4000/api/";
+const API_Q2 = "http://localhost:4000/api/countries";
 const API_Q3 = "https://restcountries.eu/rest/v2/all";
-const API_Q4 = "http://localhost:4000/slotMachine";
+const API_Q4 = "http://localhost:4000/api/slotMachine";
 const getData = () => {
   return (dispatch) => {
     fetch(API_Q1)
@@ -36,7 +36,6 @@ export const getCommonCountries = () => {
     fetch(API_Q2)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         dispatch({ type: actionType.FETCH_DATA_Q2_SUCCESS, data });
       });
   };
